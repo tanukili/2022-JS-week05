@@ -72,16 +72,60 @@ input {
 .gx-10 {
   max-width: 920px; }
 
-.font-1-m {
+/*.font{
+    font-size: ;
+    line-height: ;
+    font-weight: ;
+}*/
+.font-1-1 {
   font-size: 16px;
+  line-height: 22px; }
+
+.font-1-1-m {
+  font-size: 16px;
+  line-height: 22px;
   font-weight: 500; }
 
-.font-3-b {
+.font-1-2 {
+  font-size: 16px;
+  line-height: 24px; }
+
+.font-2-3 {
+  font-size: 20px;
+  line-height: 25px; }
+
+.font-2-2 {
+  font-size: 20px;
+  line-height: 24px; }
+
+.font-3-4-m {
   font-size: 24px;
+  line-height: 33px;
+  font-weight: 500; }
+
+.font-3-4-b {
+  font-size: 24px;
+  line-height: 33px;
   font-weight: 700; }
+
+.font-4-5-m {
+  font-size: 32px;
+  line-height: 43px;
+  font-weight: 500; }
 
 .primary {
   color: #00807E; }
+
+.font-light {
+  color: #818A91; }
+
+.area {
+  color: #FFFFFF;
+  background: #64C3BF; }
+
+.btn {
+  color: #FFFFFF;
+  background: #00807E; }
 
 .logo a {
   background: url(../images/logo.png);
