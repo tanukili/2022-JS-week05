@@ -56,6 +56,9 @@ img {
 input {
   display: block; }
 
+*, *::before, *::after {
+  font-family: "Noto Sans", Roboto, sans-serif; }
+
 .container {
   max-width: 1110px;
   margin: 0 auto; }
