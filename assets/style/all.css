@@ -72,6 +72,17 @@ input {
 .gx-10 {
   max-width: 920px; }
 
+.font-1-m {
+  font-size: 16px;
+  font-weight: 500; }
+
+.font-3-b {
+  font-size: 24px;
+  font-weight: 700; }
+
+.primary {
+  color: #00807E; }
+
 .logo a {
   background: url(../images/logo.png);
   height: 235px;
