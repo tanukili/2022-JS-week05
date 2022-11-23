@@ -63,11 +63,27 @@ input {
   max-width: 1110px;
   margin: 0 auto; }
 
-.row {
+.df {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto; }
+
+.jcsb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.aic {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.gx-1 {
+  max-width: 65px; }
+
+.gx-3 {
+  max-width: 255px; }
 
 .gx-4 {
   max-width: 350px; }
@@ -75,11 +91,36 @@ input {
 .gx-10 {
   max-width: 920px; }
 
-/*.font{
-    font-size: ;
-    line-height: ;
-    font-weight: ;
-}*/
+.mt-100 {
+  margin-top: 100px; }
+
+.mb-16 {
+  margin-bottom: 16px; }
+
+.mb-32 {
+  margin-bottom: 32px; }
+
+.mr-30 {
+  margin-right: 30px; }
+
+.pt-8 {
+  padding-top: 8px; }
+
+.pt-60 {
+  padding-top: 60px; }
+
+.pb-4 {
+  padding-bottom: 4px; }
+
+.pb-8 {
+  padding-bottom: 8px; }
+
+.pl-12 {
+  padding-left: 12px; }
+
+.title-bb {
+  border-bottom: 3px solid #00807E; }
+
 .font-1-1 {
   font-size: 16px;
   line-height: 22px; }
@@ -100,6 +141,10 @@ input {
 .font-2-2 {
   font-size: 20px;
   line-height: 24px; }
+
+.font-2-4 {
+  font-size: 20px;
+  line-height: 33px; }
 
 .font-3-4-m {
   font-size: 24px;
@@ -122,13 +167,16 @@ input {
 .font-light {
   color: #818A91; }
 
-.area {
-  color: #FFFFFF;
-  background: #64C3BF; }
+.input-bg {
+  background: #FAFAFA; }
 
 .btn {
   color: #FFFFFF;
   background: #00807E; }
+
+.area {
+  color: #FFFFFF;
+  background: #64C3BF; }
 
 .logo a {
   background: url(../images/logo.png);
