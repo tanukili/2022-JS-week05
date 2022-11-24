@@ -74,6 +74,11 @@ input {
       -ms-flex-pack: justify;
           justify-content: space-between; }
 
+.jce {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end; }
+
 .aic {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -84,6 +89,9 @@ input {
 
 .gx-3 {
   max-width: 255px; }
+
+.wx-3 {
+  width: 255px; }
 
 .gx-4 {
   max-width: 350px; }
@@ -97,6 +105,9 @@ input {
 .mb-16 {
   margin-bottom: 16px; }
 
+.mb-24 {
+  margin-bottom: 24px; }
+
 .mb-32 {
   margin-bottom: 32px; }
 
@@ -105,6 +116,9 @@ input {
 
 .pt-8 {
   padding-top: 8px; }
+
+.pt-10 {
+  padding-top: 10px; }
 
 .pt-60 {
   padding-top: 60px; }
@@ -115,11 +129,29 @@ input {
 .pb-8 {
   padding-bottom: 8px; }
 
+.pb-10 {
+  padding-bottom: 10px; }
+
+.pb-60 {
+  padding-bottom: 60px; }
+
+.pb-89 {
+  padding-bottom: 89px; }
+
+.pr-40 {
+  padding-right: 40px; }
+
+.pr-95 {
+  padding-right: 95px; }
+
 .pl-12 {
   padding-left: 12px; }
 
-.title-bb {
-  border-bottom: 3px solid #00807E; }
+.pl-40 {
+  padding-left: 40px; }
+
+.pl-95 {
+  padding-left: 95px; }
 
 .font-1-1 {
   font-size: 16px;
@@ -177,6 +209,24 @@ input {
 .area {
   color: #FFFFFF;
   background: #64C3BF; }
+
+.none-b {
+  border: 0px; }
+
+.title-bb {
+  border-bottom: 3px solid #00807E; }
+
+.input-b {
+  border: 0px;
+  border-bottom: 1px solid #00807E; }
+
+.add-s-r {
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  border-radius: 12px; }
+
+.btn-r {
+  border-radius: 5px; }
 
 .logo a {
   background: url(../images/logo.png);
