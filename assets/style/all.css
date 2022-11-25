@@ -99,8 +99,8 @@ input {
 .gx-10 {
   max-width: 920px; }
 
-.mt-100 {
-  margin-top: 100px; }
+.mt-120 {
+  margin-top: 120px; }
 
 .mb-16 {
   margin-bottom: 16px; }
@@ -111,14 +111,23 @@ input {
 .mb-32 {
   margin-bottom: 32px; }
 
+.mb-100 {
+  margin-bottom: 100px; }
+
 .mr-30 {
   margin-right: 30px; }
+
+.ml-95 {
+  margin-left: 95px; }
 
 .pt-8 {
   padding-top: 8px; }
 
 .pt-10 {
   padding-top: 10px; }
+
+.pt-56 {
+  padding-top: 56px; }
 
 .pt-60 {
   padding-top: 60px; }
@@ -131,6 +140,9 @@ input {
 
 .pb-10 {
   padding-bottom: 10px; }
+
+.pb-52 {
+  padding-bottom: 52px; }
 
 .pb-60 {
   padding-bottom: 60px; }
@@ -202,6 +214,9 @@ input {
 .input-bg {
   background: #FAFAFA; }
 
+.bg-style {
+  background: #F7F7F7; }
+
 .btn {
   color: #FFFFFF;
   background: #00807E; }
@@ -216,7 +231,10 @@ input {
 .title-bb {
   border-bottom: 3px solid #00807E; }
 
-.input-b {
+.radio-b {
+  border: 1px solid #CED4DA; }
+
+.input-bb {
   border: 0px;
   border-bottom: 1px solid #00807E; }
 
