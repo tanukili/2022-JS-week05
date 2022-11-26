@@ -282,9 +282,12 @@ body {
 .bg-style {
   background: #F7F7F7; }
 
-.main-style {
+.main-style, .btn-style {
   color: #FFFFFF;
   background: #00807E; }
+
+.btn-style:hover {
+  background: #004E4D; }
 
 .second-style {
   color: #FFFFFF;
@@ -313,6 +316,11 @@ body {
   border-radius: 12px;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px; }
+
+.input-r {
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px; }
 
 .btn-r {
   border-radius: 5px;
