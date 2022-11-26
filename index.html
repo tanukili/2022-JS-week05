@@ -38,9 +38,12 @@
       </div>
       <div class="df jcsb aic mb-16">
         <label for="" class="font-1-1-m primary gx-1 mr-30">景點地區</label>
-          <div class="arrow position-r">
-            <input type="text" placeholder="請選擇景點地區" class="font-1-1 font-light input-bg wx-3 pt-8 pb-8 pl-12 border-1 input-r">
-          </div>
+        <select id="ticketRegion" name="景點地區" class="font-1-1 font-light input-bg wx-3 pt-8 pb-8 pl-12 border-1 input-r">
+          <option value="" disabled selected hidden>請選擇景點地區</option>
+          <option value="台北">台北</option>
+          <option value="台中">台中</option>
+          <option value="高雄">高雄</option>
+        </select>
       </div>
       <div class="df jcsb aic mb-16">
         <label for="" class="font-1-1-m primary gx-1 mr-30">套票金額</label>
@@ -66,151 +69,17 @@
 </div>
 <div class="bg-style pt-56 pb-119">
   <div class="container">
-    <div class="df aic ml-95  pb-52">
-      <div class="arrow-2 position-r">
-        <input type="text" placeholder="地區搜尋" class="font-1-1 font-light wx-3 radio-b pt-8 pb-8 pl-12 mr-30 input-r ">        
-      </div>
+    <div class="df aic ml-95 pb-52">
+      <select name="" class="regionSearch font-1-1 font-light bg-light wx-3 radio-b pt-8 pb-8 pl-12 mr-30 r-4">
+        <option value="地區搜尋" disabled selected hidden>地區搜尋</option>
+        <option value="">全部地區</option>
+        <option value="台北">台北</option>
+        <option value="台中">台中</option>
+        <option value="高雄">高雄</option>
+      </select>
       <p class="font-1-1 font-light">本次搜尋共 6 筆資料</p>
     </div>
-    <ul class="df jcsb fw">
-      <li class="gx-4 position-r bg-light mb-38 product-s-r">
-        <img src="assets/images/travel_1.png" alt="travel-01">
-        <p class="font-2-2 second-style position-area pt-8 pb-8 pr-20 pl-20">台北</p>
-        <p class="font-1-1 position-score main-style pt-5 pb-5 pr-8 pl-8">8.6</p>
-        <div class="m-20">
-          <div>
-            <h2 class="font-3-4-m primary pb-4 border-2 mb-16">綠島自由行套裝行程</h2>
-            <p class="font-1-2 font-light mb-22">嚴選超高CP值綠島自由行套裝行程，多種綠島套裝組合，提供台東綠島來回船票、綠島環島機車、綠島民宿住宿，行程加贈『綠島浮潛體驗』以及『綠島生態導覽』，讓你用輕鬆的綠島套裝自由行，也能深度認識綠島在地文化。</p>
-          </div>
-          <div class="df jcsb aic primary pb-14">
-            <div class="df">
-              <span class="material-icons-outlined mr-6">
-                error
-              </span>
-              <p class="font-1-1-m">剩下最後 8 組</p>
-            </div>
-            <div class="df aic">
-              <p class="font-1-1-m mr-4">TWD</p>
-              <p class="font-4-5-m ff-en">$1,280</p>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="gx-4 position-r bg-light mb-38 product-s-r">
-        <img src="assets/images/travel_1.png" alt="travel-01">
-        <p class="font-2-2 second-style position-area pt-8 pb-8 pr-20 pl-20">台北</p>
-        <p class="font-1-1 position-score main-style pt-5 pb-5 pr-8 pl-8">8.6</p>
-        <div class="m-20">
-          <div>
-            <h2 class="font-3-4-m primary pb-4 border-2 mb-16">綠島自由行套裝行程</h2>
-            <p class="font-1-2 font-light mb-22">嚴選超高CP值綠島自由行套裝行程，多種綠島套裝組合，提供台東綠島來回船票、綠島環島機車、綠島民宿住宿，行程加贈『綠島浮潛體驗』以及『綠島生態導覽』，讓你用輕鬆的綠島套裝自由行，也能深度認識綠島在地文化。</p>
-          </div>
-          <div class="df jcsb aic primary pb-14">
-            <div class="df">
-              <span class="material-icons-outlined mr-6">
-                error
-              </span>
-              <p class="font-1-1-m">剩下最後 8 組</p>
-            </div>
-            <div class="df aic">
-              <p class="font-1-1-m mr-4">TWD</p>
-              <p class="font-4-5-m ff-en">$1,280</p>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="gx-4 position-r bg-light mb-38 product-s-r">
-        <img src="assets/images/travel_1.png" alt="travel-01">
-        <p class="font-2-2 second-style position-area pt-8 pb-8 pr-20 pl-20">台北</p>
-        <p class="font-1-1 position-score main-style pt-5 pb-5 pr-8 pl-8">8.6</p>
-        <div class="m-20">
-          <div>
-            <h2 class="font-3-4-m primary pb-4 border-2 mb-16">綠島自由行套裝行程</h2>
-            <p class="font-1-2 font-light mb-22">嚴選超高CP值綠島自由行套裝行程，多種綠島套裝組合，提供台東綠島來回船票、綠島環島機車、綠島民宿住宿，行程加贈『綠島浮潛體驗』以及『綠島生態導覽』，讓你用輕鬆的綠島套裝自由行，也能深度認識綠島在地文化。</p>
-          </div>
-          <div class="df jcsb aic primary pb-14">
-            <div class="df">
-              <span class="material-icons-outlined mr-6">
-                error
-              </span>
-              <p class="font-1-1-m">剩下最後 8 組</p>
-            </div>
-            <div class="df aic">
-              <p class="font-1-1-m mr-4">TWD</p>
-              <p class="font-4-5-m ff-en">$1,280</p>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="gx-4 position-r bg-light mb-38 product-s-r">
-        <img src="assets/images/travel_1.png" alt="travel-01">
-        <p class="font-2-2 second-style position-area pt-8 pb-8 pr-20 pl-20">台北</p>
-        <p class="font-1-1 position-score main-style pt-5 pb-5 pr-8 pl-8">8.6</p>
-        <div class="m-20">
-          <div>
-            <h2 class="font-3-4-m primary pb-4 border-2 mb-16">綠島自由行套裝行程</h2>
-            <p class="font-1-2 font-light mb-22">嚴選超高CP值綠島自由行套裝行程，多種綠島套裝組合，提供台東綠島來回船票、綠島環島機車、綠島民宿住宿，行程加贈『綠島浮潛體驗』以及『綠島生態導覽』，讓你用輕鬆的綠島套裝自由行，也能深度認識綠島在地文化。</p>
-          </div>
-          <div class="df jcsb aic primary pb-14">
-            <div class="df">
-              <span class="material-icons-outlined mr-6">
-                error
-              </span>
-              <p class="font-1-1-m">剩下最後 8 組</p>
-            </div>
-            <div class="df aic">
-              <p class="font-1-1-m mr-4">TWD</p>
-              <p class="font-4-5-m ff-en">$1,280</p>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="gx-4 position-r bg-light mb-38 product-s-r">
-        <img src="assets/images/travel_1.png" alt="travel-01">
-        <p class="font-2-2 second-style position-area pt-8 pb-8 pr-20 pl-20">台北</p>
-        <p class="font-1-1 position-score main-style pt-5 pb-5 pr-8 pl-8">8.6</p>
-        <div class="m-20">
-          <div>
-            <h2 class="font-3-4-m primary pb-4 border-2 mb-16">綠島自由行套裝行程</h2>
-            <p class="font-1-2 font-light mb-22">嚴選超高CP值綠島自由行套裝行程，多種綠島套裝組合，提供台東綠島來回船票、綠島環島機車、綠島民宿住宿，行程加贈『綠島浮潛體驗』以及『綠島生態導覽』，讓你用輕鬆的綠島套裝自由行，也能深度認識綠島在地文化。</p>
-          </div>
-          <div class="df jcsb aic primary pb-14">
-            <div class="df">
-              <span class="material-icons-outlined mr-6">
-                error
-              </span>
-              <p class="font-1-1-m">剩下最後 8 組</p>
-            </div>
-            <div class="df aic">
-              <p class="font-1-1-m mr-4">TWD</p>
-              <p class="font-4-5-m ff-en">$1,280</p>
-            </div>
-          </div>
-        </div>
-      </li>
-      <li class="gx-4 position-r bg-light mb-38 product-s-r">
-        <img src="assets/images/travel_1.png" alt="travel-01">
-        <p class="font-2-2 second-style position-area pt-8 pb-8 pr-20 pl-20">台北</p>
-        <p class="font-1-1 position-score main-style pt-5 pb-5 pr-8 pl-8">8.6</p>
-        <div class="m-20">
-          <div>
-            <h2 class="font-3-4-m primary pb-4 border-2 mb-16">綠島自由行套裝行程</h2>
-            <p class="font-1-2 font-light mb-22">嚴選超高CP值綠島自由行套裝行程，多種綠島套裝組合，提供台東綠島來回船票、綠島環島機車、綠島民宿住宿，行程加贈『綠島浮潛體驗』以及『綠島生態導覽』，讓你用輕鬆的綠島套裝自由行，也能深度認識綠島在地文化。</p>
-          </div>
-          <div class="df jcsb aic primary pb-14">
-            <div class="df">
-              <span class="material-icons-outlined mr-6">
-                error
-              </span>
-              <p class="font-1-1-m">剩下最後 8 組</p>
-            </div>
-            <div class="df aic">
-              <p class="font-1-1-m mr-4">TWD</p>
-              <p class="font-4-5-m ff-en">$1,280</p>
-            </div>
-          </div>
-        </div>
-      </li>
+    <ul class="product df jcsb fw">
     </ul>
   </div>
 </div>
