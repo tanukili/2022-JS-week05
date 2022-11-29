@@ -50,7 +50,6 @@ axios.get('https://raw.githubusercontent.com/hexschool/js-training/main/travelAp
 
     productList.innerHTML = str;
   } else if (data == '') {
-    console.log(1);
     seachNum.textContent = "\u672C\u6B21\u641C\u5C0B\u5171 0 \u7B46\u8CC7\u6599";
     cantFind.innerHTML = "<h3 class=\"primary font-5-b mb-50\">\u67E5\u7121\u6B64\u95DC\u9375\u5B57\u8CC7\u6599</h3>\n      <img src=\"https://github.com/hexschool/2022-web-layout-training/blob/main/js_week5/no_found.png?raw=true\" alt=\"cantFind\" class=\"m-0-a\">";
   }
