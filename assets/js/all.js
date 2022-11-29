@@ -35,16 +35,24 @@
 var productList = document.querySelector('.product'); //新增資料筆數
 
 var seachNum = document.querySelector('.seachNum');
+var cantFind = document.querySelector('.cantFind-area');
 axios.get('https://raw.githubusercontent.com/hexschool/js-training/main/travelApi.json').then(function (response) {
   //多了一個外層物件的 data
   var data = response.data.data; //資料初始值
 
-  var str = '';
-  data.forEach(function (item, index) {
-    str += "<li class=\"gx-4 position-r bg-light mb-38 product-s-r\">\n                <img src=\"".concat(item.imgUrl, "\" alt=\"travel-01\" class=\"list-img\">\n                <p class=\"font-2-2 second-style position-area pt-8 pb-8 pr-20 pl-20 tag-r\">").concat(item.area, "</p>\n                <p class=\"font-1-1 position-score main-style pt-5 pb-5 tac tag-r\">").concat(item.rate, "</p>\n                <div class=\"p-20 list-content df fxdc jcsb\">\n                  <div>\n                    <h2 class=\"font-3-4-m primary pb-4 border-2 mb-16\">").concat(item.name, "</h2>\n                    <p class=\"font-1-2 font-light mb-22\">").concat(item.description, "</p>\n                  </div>\n                  <div class=\"df jcsb aic primary\">\n                    <div class=\"df\">\n                      <span class=\"material-icons-outlined mr-6\">\n                        error\n                      </span>\n                      <p class=\"font-1-1-m\">\u5269\u4E0B\u6700\u5F8C ").concat(item.group, " \u7D44</p>\n                    </div>\n                    <div class=\"df aic\">\n                      <p class=\"font-1-1-m mr-4\">TWD</p>\n                      <p class=\"font-4-5-m ff-en\">$").concat(item.price, "</p>\n                    </div>\n                  </div>\n                </div>\n              </li>");
-    seachNum.textContent = "\u672C\u6B21\u641C\u5C0B\u5171 ".concat(index + 1, " \u7B46\u8CC7\u6599");
-  }); //畫出資料
+  var str = ''; //加入是否有資料的判斷
 
-  productList.innerHTML = str;
+  if (data != '') {
+    data.forEach(function (item, index) {
+      str += "<li class=\"gx-4 position-r bg-light mb-38 product-s-r\">\n                  <img src=\"".concat(item.imgUrl, "\" alt=\"travel-01\" class=\"list-img\">\n                  <p class=\"font-2-2 second-style position-area pt-8 pb-8 pr-20 pl-20 tag-r\">").concat(item.area, "</p>\n                  <p class=\"font-1-1 position-score main-style pt-5 pb-5 tac tag-r\">").concat(item.rate, "</p>\n                  <div class=\"p-20 list-content df fxdc jcsb\">\n                    <div>\n                      <h2 class=\"font-3-4-m primary pb-4 border-2 mb-16\">").concat(item.name, "</h2>\n                      <p class=\"font-1-2 font-light mb-22\">").concat(item.description, "</p>\n                    </div>\n                    <div class=\"df jcsb aic primary\">\n                      <div class=\"df\">\n                        <span class=\"material-icons-outlined mr-6\">\n                          error\n                        </span>\n                        <p class=\"font-1-1-m\">\u5269\u4E0B\u6700\u5F8C ").concat(item.group, " \u7D44</p>\n                      </div>\n                      <div class=\"df aic\">\n                        <p class=\"font-1-1-m mr-4\">TWD</p>\n                        <p class=\"font-4-5-m ff-en\">$").concat(item.price, "</p>\n                      </div>\n                    </div>\n                  </div>\n                </li>");
+      seachNum.textContent = "\u672C\u6B21\u641C\u5C0B\u5171 ".concat(index + 1, " \u7B46\u8CC7\u6599");
+    }); //畫出資料
+
+    productList.innerHTML = str;
+  } else if (data == '') {
+    console.log(1);
+    seachNum.textContent = "\u672C\u6B21\u641C\u5C0B\u5171 0 \u7B46\u8CC7\u6599";
+    cantFind.innerHTML = "<h3 class=\"primary font-5-b mb-50\">\u67E5\u7121\u6B64\u95DC\u9375\u5B57\u8CC7\u6599</h3>\n      <img src=\"https://github.com/hexschool/2022-web-layout-training/blob/main/js_week5/no_found.png?raw=true\" alt=\"cantFind\" class=\"m-0-a\">";
+  }
 });
 //# sourceMappingURL=all.js.map
