@@ -21,6 +21,7 @@
       <img src="assets/images/main_img.png" alt="main-image">
       <a href="./index.html"><h1>Let's travel</h1></a>
     </div>
+    <!--補齊表單資訊-->
     <form action="資料庫位置">
       <h3 class="font-3-4-b primary pb-4 border-3 mb-32">
         <span class="material-icons-outlined font-2-4">
@@ -29,15 +30,15 @@
         新增旅遊套票
       </h3>
       <div class="df jcsb aic mb-16">
-        <label for="" class="font-1-1-m primary gx-1 mr-30">套票名稱</label>
-        <input type="text" placeholder="請填寫套票名稱" class="font-1-1 font-light input-bg wx-3 pt-8 pb-8 pl-12 border-1 input-r">
+        <label for="ticketName" class="font-1-1-m primary gx-1 mr-30">套票名稱</label>
+        <input id="ticketName" type="text" name="套票名稱" placeholder="請填寫套票名稱" class="font-1-1 font-light input-bg wx-3 pt-8 pb-8 pl-12 border-1 input-r">
       </div>
       <div class="df jcsb aic mb-16">
-        <label for="" class="font-1-1-m primary gx-1 mr-30">圖片網址</label>
-        <input type="text" placeholder="請填寫圖片網址" class="font-1-1 font-light input-bg wx-3 pt-8 pb-8 pl-12 border-1 input-r">
+        <label for="ticketUrl" class="font-1-1-m primary gx-1 mr-30">圖片網址</label>
+        <input id="ticketUrl" type="text" name="圖片網址" placeholder="請填寫圖片網址" class="font-1-1 font-light input-bg wx-3 pt-8 pb-8 pl-12 border-1 input-r">
       </div>
       <div class="df jcsb aic mb-16">
-        <label for="" class="font-1-1-m primary gx-1 mr-30">景點地區</label>
+        <label for="ticketRegion" class="font-1-1-m primary gx-1 mr-30">景點地區</label>
         <select id="ticketRegion" name="景點地區" class="font-1-1 font-light input-bg wx-3 pt-8 pb-8 pl-12 border-1 input-r">
           <option value="" disabled selected hidden>請選擇景點地區</option>
           <option value="台北">台北</option>
@@ -46,20 +47,20 @@
         </select>
       </div>
       <div class="df jcsb aic mb-16">
-        <label for="" class="font-1-1-m primary gx-1 mr-30">套票金額</label>
-        <input type="text" placeholder="請填寫套票金額" class="font-1-1 font-light input-bg wx-3 pt-8 pb-8 pl-12 border-1 input-r">
+        <label for="ticketPrice" class="font-1-1-m primary gx-1 mr-30">套票金額</label>
+        <input id="ticketPrice" type="number" name="套票金額" placeholder="請填寫套票金額" class="font-1-1 font-light input-bg wx-3 pt-8 pb-8 pl-12 border-1 input-r">
       </div>
       <div class="df jcsb aic mb-16">
-        <label for="" class="font-1-1-m primary gx-1 mr-30">套票組數</label>
-        <input type="text" placeholder="請填寫套票組數" class="font-1-1 font-light input-bg wx-3 pt-8 pb-8 pl-12 border-1 input-r">
+        <label for="ticketNum" class="font-1-1-m primary gx-1 mr-30">套票組數</label>
+        <input id="ticketNum" type="number" name="套票組數" placeholder="請填寫套票組數" class="font-1-1 font-light input-bg wx-3 pt-8 pb-8 pl-12 border-1 input-r">
       </div>
       <div class="df jcsb aic mb-16">
-        <label for="" class="font-1-1-m primary gx-1 mr-30">套票星級</label>
-        <input type="text" placeholder="請填寫套票星級" class="font-1-1 font-light input-bg wx-3 pt-8 pb-8 pl-12 border-1 input-r">
+        <label for="ticketStart" class="font-1-1-m primary gx-1 mr-30">套票星級</label>
+        <input id="ticketStart" type="number" min="1" max="10" name="套票星級" placeholder="請填寫套票星級" class="font-1-1 font-light input-bg wx-3 pt-8 pb-8 pl-12 border-1 input-r">
       </div>
       <div class="df jcsb mb-24">
-        <label for="" class="font-1-1-m primary gx-1 pt-8 mr-30">套票描述</label>
-        <input type="text" placeholder="請填寫套票描述（限 100 字）" class="font-1-1 font-light input-bg wx-3 pt-8 pb-89 pl-12 border-1 input-r">
+        <label for="ticketDescribe" class="font-1-1-m primary gx-1 pt-8 mr-30">套票描述</label>
+        <input id="ticketDescribe" type="textarea" name="套票描述" placeholder="請填寫套票描述（限 100 字）" class="font-1-1 font-light input-bg wx-3 pt-8 pb-89 pl-12 border-1 input-r">
       </div>
       <div class="df jce">
         <input type="submit" value="新增套票" class="font-2-3 btn-style btn-r pt-10 pb-10 pr-40 pl-40 border-n">
@@ -77,7 +78,7 @@
         <option value="台中">台中</option>
         <option value="高雄">高雄</option>
       </select>
-      <p class="font-1-1 font-light">本次搜尋共 6 筆資料</p>
+      <p class="font-1-1 font-light seachNum">本次搜尋共 0 筆資料</p>
     </div>
     <ul class="product df jcsb fw">
     </ul>
@@ -85,6 +86,7 @@
 </div>
 
 
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
 </body>
